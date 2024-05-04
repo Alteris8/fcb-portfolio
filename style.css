@@ -1,0 +1,52 @@
+/* the purpose of asterisk is to select everything*/
+/* Syntax for CSS:
+	selector {
+		property:  value;
+	} 
+*/
+
+
+* {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+ 
+}
+
+/*get your super cool fonts on https://fonts.google.com*/
+h1, p {
+	font-family: "Montserrat". sans-serif;
+	font-weight: 600;
+  	font-style: normal;
+}
+
+#profile {
+	height: 250px;
+	/*width*/
+	widows: 250px;
+
+	/*roundness of the borders*/
+	border-radius: 30%;
+}
+
+body {
+	/*get your sexy ass background on https://www.svgbackgrounds.com/*/
+	background-color: #ee5522 !important;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%23d23d09' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
+	/*keeps the background fixed*/
+	background-attachment: fixed;
+}
+
+/*this oversees the entire layout of the website*/
+#landing {
+	/*viewport height, as in like in reference to the space of the website*/
+	height: 80vh;
+	display: flex;
+
+	/*what happens is that it sets elements in a row where the entirety of the website is maxxed*/
+	/*only exclusive to display flex*/
+	flex-direction:  column;
+	/*only exlusive to display flex*/
+	justify-content: center;
+	align-items: center;
+}
